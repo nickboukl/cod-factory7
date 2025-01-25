@@ -1,17 +1,14 @@
 package gr.aueb.cf.ch2;
 
-import java.util.Locale;
 import java.util.Scanner;
 
-import static java.lang.System.in;
-
 /**
- * Nα λαμβάνει ως input απο τον χρήστη ε΄να
- * διψήφιο ακέραιο και να υπολογίιζει και να
+ * Λαμβάνει ως input από τον χρήστη ένα
+ * διψήφιο ακέραιο και υπολογίζει και να
  * εκτυπώνει το άθροισμα των ψηφίων του.
- * Για παράδειγμα, αν ο χρήστης δώσει εκέραιο 15,
- * θα πρέπει το αποτέλεσμα να είναι
- * 1 + 5 =6.
+ * Για παράδειγμα, αν ο χρήστης δώσει τον
+ * ακέραιο 15, θα πρέπει το αποτέλεσμα να είναι
+ * 1 + 5 = 6.
  */
 public class DigitsSum {
 
@@ -19,16 +16,17 @@ public class DigitsSum {
         Scanner in = new Scanner(System.in);
         int leftDigit = 0;
         int rightDigit = 0;
-        int inputNum = 0;
+        int inputNum;
         int sum = 0;
 
-        System.out.println("Please insert a two-digit interger");
+        System.out.println("Please insert a two-digit integer");
         inputNum = in.nextInt();
 
-        leftDigit = inputNum / 10;
-        rightDigit = inputNum %10;
+        leftDigit = inputNum / 10;  // Με div 10 παίρνουμε το αριστερό ψηφίο
+        rightDigit = inputNum % 10; // Με mod 10 παίρνουμε το δεξί ψηφίο
         sum = leftDigit + rightDigit;
 
-        System.out.printf("Input num: %d, Left digit: %d, Right digit: %d, Sum: %d", inputNum, leftDigit, rightDigit, sum);
+        System.out.printf("Input num: %d, Left digit: %d, Right digit:  %d, Sum:  %d",
+                inputNum, leftDigit, rightDigit, sum);
     }
 }

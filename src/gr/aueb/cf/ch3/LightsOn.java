@@ -4,12 +4,10 @@ import java.util.Scanner;
 
 /**
  * Turn lights on, if it is raining
- * AND car is running (>100) OR is dark
- *
+ * AND car is running (>100) OR is dark.
  */
-
-
 public class LightsOn {
+
     public static void main(String[] args) {
         final int MAX_CAR_SPEED = 100;
         Scanner in = new Scanner(System.in);
@@ -19,10 +17,10 @@ public class LightsOn {
         boolean areLightsOn = false;
         int carSpeed;
 
-        System.out.println("Please insert if its is raining");
+        System.out.println("Please insert if it is raining");
         isRaining = in.nextBoolean();
 
-        System.out.println("Please inser if its dakr");
+        System.out.println("Please insert if it is dark");
         isDark = in.nextBoolean();
 
         System.out.println("Please insert car speed");
@@ -30,8 +28,8 @@ public class LightsOn {
 
         isCarRunning = carSpeed > MAX_CAR_SPEED;
         areLightsOn = isRaining && (isDark || isCarRunning);
-        // arelightson = (isRaining && is Dark) || (isRaining && is CarRuning);
+        // areLightsOn = (isRaining && isDark) || (isRaining && isCarRunning);
 
-
+        System.out.println("Tutn lights on: " + areLightsOn);
     }
 }

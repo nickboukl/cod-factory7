@@ -4,13 +4,10 @@ import java.io.IOException;
 import java.util.Scanner;
 
 /**
- * Reads a char as a byte
- *
- *
- *
+ * Reads a char as a byte.
  */
-
 public class CharInApp {
+
     public static void main(String[] args) throws IOException {
         char ch = ' ';
         Scanner scanner = new Scanner(System.in);
@@ -21,5 +18,4 @@ public class CharInApp {
 
         System.out.printf("%c", ch);
     }
-
 }

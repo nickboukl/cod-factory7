@@ -3,23 +3,21 @@ package gr.aueb.cf.ch3;
 import java.util.Scanner;
 
 /**
- * Λαμβάνει μια θερμοκρασία απο τον χρήστη και
- * εμφανίζει κατάλληλο μήνυμα
- *
+ * Λαμβάνει μία θερμοκρασία από τον χρήστη
+ * ακι εμφανίζει κατάλληλο μήνυμα.
  */
-
-public class tempApp {
+public class TempApp {
 
     public static void main(String[] args) {
-        Scanner inn = new Scanner(System.in);
+        Scanner in = new Scanner(System.in);
         int temp = 0;
         boolean isTempBelowZero;
 
         System.out.println("Please insert the current temperature");
-        temp = inn.nextInt();
+        temp = in.nextInt();
 
-        isTempBelowZero = temp <= 0;
+        isTempBelowZero = temp < 0;
 
-        System.out.println("The temperature is below zero: " + isTempBelowZero);
+        System.out.println("Temperature is below zero: " + isTempBelowZero);
     }
 }

@@ -3,11 +3,10 @@ package gr.aueb.cf.ch3;
 import java.util.Scanner;
 
 /**
- * ypologizei to b^power
- *
+ * Υπολογίζει το b^power
  */
-
 public class PowerCalculator {
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int base = 0;

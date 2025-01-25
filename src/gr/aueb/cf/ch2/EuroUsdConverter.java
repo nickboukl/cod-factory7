@@ -3,28 +3,31 @@ package gr.aueb.cf.ch2;
 import java.util.Scanner;
 
 /**
- * Converts Euro to usd by taking
- * 99 USD cents =1 euro
- * one input in euro, execute the convert and
- * print the amount
- *
+ * Διαβάζει από τον χρήστη ένα ποσό σε Ευρώ
+ * και μετατρέπει από Ευρώ σε USD και cents.
+ * Η ισοτιμία 99 cents = 1 Ευρώ. Εκτυπώνει το
+ * αποτέλεσμα.
  */
 public class EuroUsdConverter {
+
     public static void main(String[] args) {
 
-        Scanner scanner = new Scanner(System.in);
+        // Δήλωση και Αρχικοποίηση Μεταβλητών
+        int inputEuros = 0;
+        int totalUsaCents = 0;
+        int usaDollars = 0;
+        int usaCents = 0;
+        final int PARITY = 99;
+        Scanner in = new Scanner(System.in);
 
-        // Conversion rate: 99 cents (0.99 USD) per 1 Euro
-        double conversionRate = 0.99;
+        // Εντολές
+        System.out.println("Please insert an integer amount (Euro)");
+        inputEuros = in.nextInt();
 
-        // Prompt the user to enter an amount in Euros
-        System.out.print("Enter amount in Euros: ");
-        double euros = scanner.nextDouble();
+        totalUsaCents = inputEuros * PARITY;
+        usaDollars = totalUsaCents / 100;
+        usaCents = totalUsaCents % 100;
 
-        // Convert Euros to USD
-        double usd = euros * conversionRate;
-
-        // Display the result
-        System.out.printf("%.2f Euros is equivalent to %.2f USD.%n", euros, usd);
+        System.out.printf("%d \u20AC = %d \u0024 , %d usa cents", inputEuros, usaDollars, usaCents);
     }
 }

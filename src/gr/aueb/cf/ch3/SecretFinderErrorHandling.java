@@ -1,17 +1,13 @@
 package gr.aueb.cf.ch3;
 
-/**
- *Linearize the branches and check
- * errors first.
- *
- *
- *
- */
-
-
 import java.util.Scanner;
 
+/**
+ * Linearize the branches and check
+ * errors first.
+ */
 public class SecretFinderErrorHandling {
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int num = 0;
@@ -27,7 +23,7 @@ public class SecretFinderErrorHandling {
                 continue;
             }
 
-            System.out.println("Bingo");
+            System.out.println("Bingo!");
             break;
         }
     }

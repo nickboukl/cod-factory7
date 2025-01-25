@@ -6,16 +6,15 @@ import java.util.Scanner;
  * Scanner Demo. Reads two integers from the
  * std input (keyboard) and calculates the result.
  */
-
 public class ScannerAddApp {
+
     public static void main(String[] args) {
 
         // Δήλωση και αρχικοποίηση μεταβλητών
+        Scanner in = new Scanner(System.in);
         int num1 = 0;
         int num2 = 0;
         int sum = 0;
-        Scanner in = new Scanner(System.in);
-
 
         // Εντολές
         System.out.println("Please insert two integers");

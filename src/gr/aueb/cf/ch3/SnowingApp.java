@@ -2,7 +2,11 @@ package gr.aueb.cf.ch3;
 
 import java.util.Scanner;
 
+/**
+ * Snowing iff raining AND temp < 0
+ */
 public class SnowingApp {
+
     public static void main(String[] args) {
         boolean isRaining = false;
         boolean isSnowing = false;
@@ -16,10 +20,8 @@ public class SnowingApp {
         temp = in.nextInt();
 
         // isSnowing
-        isSnowing = isRaining && (temp <0);
+        isSnowing = isRaining && (temp < 0);
 
         System.out.println("Is snowing: " + isSnowing);
-
-
     }
 }

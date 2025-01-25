@@ -4,10 +4,9 @@ import java.util.Scanner;
 
 /**
  * Throughout demo of for.
- *
  */
-
 public class FlexibleFor {
+
     public static void main(String[] args) {
         int startVal = 0;
         int endVal = 0;
@@ -22,7 +21,7 @@ public class FlexibleFor {
 
         for (int i = startVal; i <= endVal; i += step) {
             iterations++;
-            System.out.println(i + " ");
+            System.out.print(i + " ");
         }
         System.out.println();
         System.out.println("Iterations: " + iterations);

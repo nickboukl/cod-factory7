@@ -3,15 +3,12 @@ package gr.aueb.cf.ch3;
 import java.util.Scanner;
 
 /**
- * Dikaio psifou se ilikies > 18
- * elegxei an mia ilikia exei dikawma
- * na psifisiei.
- *
+ * Δικαίωμα ψήφου σε ηλικίες > 18.
+ * Ελέγχει αν μία ηλικία έχει δικαίωμα
+ * να ψηφίσει.
  */
-
-
-
 public class VoteEligible {
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         boolean isEligible = false;
@@ -23,6 +20,6 @@ public class VoteEligible {
 
         isEligible = age >= VOTING_AGE;
 
-        System.out.println("You are eligible " + isEligible);
+        System.out.println("You are eligible: " + isEligible);
     }
 }

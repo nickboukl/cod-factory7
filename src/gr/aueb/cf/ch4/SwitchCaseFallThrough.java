@@ -3,11 +3,11 @@ package gr.aueb.cf.ch4;
 import java.util.Scanner;
 
 /**
- * Switch case is a fall-through and can be used as a logical OR.
- *
+ * Switch-case is fall-through and can be used
+ * as a logical OR.
  */
-
 public class SwitchCaseFallThrough {
+
     public static void main(String[] args) {
         int grade;
         Scanner scanner = new Scanner(System.in);
